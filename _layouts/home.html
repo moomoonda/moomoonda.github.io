@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{% include head.html %}
+
+<body>
+
+{% include header.html %}
+
+<main class="page-content">
+
+  <div class="wrapper">
+
+    <img
+      src="{{ '/images/homepage_bullentin.png' | relative_url }}"
+      alt="Homepage Banner"
+      class="homepage-banner">
+    <a href="/project">
+      <img
+      src="{{ '/images/project-banner.png' | relative_url }}"
+      alt="Project"
+      class="homepage-banner">
+    </a>
+    
+    <a href="/about">
+    <img
+      src="{{ '/images/about-banner.png' | relative_url }}"
+      alt="Project"
+      class="homepage-banner">
+    </a>
+    <a href="/resume">
+    <img
+      src="{{ '/images/resume-banner.png' | relative_url }}"
+      alt="Project"
+      class="homepage-banner">
+    </a>
+  </div>
+
+</main>
+</body>
+</html>

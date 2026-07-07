@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{% include head.html %}
+
+<body>
+
+{% include header.html %}
+
+<main class="page-content">
+
+  <div class="wrapper">
+
+
+    <img
+      src="{{ '/images/project-banner.png' | relative_url }}"
+      alt="Project"
+      class="homepage-banner">
+
+
+    <div class="project-grid">
+
+      <div class="project-card" onclick="toggleProject(this)">
+
+        <img 
+          src="{{ '/images/tether-card.jpg' | relative_url }}" 
+          alt="Tether: Tag Reminder System">
+
+        <div class="project-info">
+
+          <h3>Tether: Senior Capstone</h3>
+
+          <p>
+           A system to be implemented in a house that uses tags to track items.
+          </p>
+
+          <a 
+            href="{{ '/projects/tether.html' | relative_url }}"
+            onclick="event.stopPropagation()">
+            View Project Details →
+          </a>
+
+        </div>
+
+      </div>
+
+
+      <div class="project-card" onclick="toggleProject(this)">
+
+        <img 
+          src="{{ '/images/tether-card.jpg' | relative_url }}" 
+          alt="Study Group Finder">
+
+        <div class="project-info">
+
+          <h3>Study Group Finder</h3>
+
+          <p>
+            A React + Node.js web application with MongoDB integration.
+          </p>
+
+          <a 
+            href="{{ '/projects/study-group.html' | relative_url }}"
+            onclick="event.stopPropagation()">
+            View Project Details →
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</main>
+
+
+<script>
+function toggleProject(card) {
+    card.classList.toggle("active");
+}
+</script>
+
+
+</body>
+</html>
