@@ -2,7 +2,20 @@
 <html lang="en">
 
 {% include head.html %}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courier Prime Example</title>
+    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap" rel="stylesheet">
 
+    <style>
+        .courier-text {
+            font-family: 'Courier Prime', monospace;
+            font-size: 20px;
+            color: #333;
+        }
+    </style>
+</head>
 <body>
 
 {% include header.html %}
@@ -12,18 +25,40 @@
   <div class="wrapper">
     <a href="/resume">
     <img
-      src="{{ '/images/resume-banner.png' | relative_url }}"
+      src="{{ '/images/resume-title.png' | relative_url }}"
       alt="Project"
       class="homepage-banner">
     </a>
+    <div class="letter-wrapper">
+  <div class="letter">
+    <p style="font-family: 'Courier Prime', Courier, monospace; font-size: 20px; color: rgb(26, 16, 12);">
+    Why choose between hardware and software when you can excel at both? I’ve split my experience into two distinct flavors—pick the resume that intresets you the most!
+    </p>
+      </div>
+</div>
+<img
+      src="{{ '/images/hardware-title.png' | relative_url }}"
+      alt="Project"
+      class="homepage-banner">
+    <div class="letter-wrapper">
+
     <object data="hardware_resume.pdf" type="application/pdf" width="100%" height="600px">
     <p>Unable to display PDF. <a href="file.pdf">Download</a> instead.</p>
 </object>
+
+</div>
+<img
+      src="{{ '/images/software-title.png' | relative_url }}"
+      alt="Project"
+      class="homepage-banner">
+<div class="letter-wrapper">
     <object data="software_resume.pdf" type="application/pdf" width="100%" height="600px">
     <p>Unable to display PDF. <a href="file.pdf">Download</a> instead.</p>
-</object>
+</object></div>
   </div>
-
+{% include animated.html %}
+{% include home-button.html %}
+{% include footer.html %}
 </main>
 </body>
 </html>

@@ -15,27 +15,35 @@
       src="{{ '/images/homepage_bullentin.png' | relative_url }}"
       alt="Homepage Banner"
       class="homepage-banner">
+    <img
+      src="{{ '/images/navigation-banner.png' | relative_url }}"
+      alt="Homepage Banner"
+      class="homepage-banner">
+    <div class="letter-wrapper">
+  <div class="letter">
     <a href="/project">
       <img
       src="{{ '/images/project-banner.png' | relative_url }}"
       alt="Project"
-      class="homepage-banner">
+      class="navigation-image ">
     </a>
     
     <a href="/about">
     <img
       src="{{ '/images/about-banner.png' | relative_url }}"
       alt="Project"
-      class="homepage-banner">
+      class="navigation-image ">
     </a>
     <a href="/resume">
     <img
       src="{{ '/images/resume-banner.png' | relative_url }}"
       alt="Project"
-      class="homepage-banner">
+      class="navigation-image ">
     </a>
-  </div>
+  </div></div></div>
 
 </main>
-</body>
+
+{% include animated.html %}
+{% include footer.html %}
 </html>

@@ -15,13 +15,158 @@
     
     <a href="/about">
     <img
-      src="{{ '/images/about-banner.png' | relative_url }}"
+      src="{{ '/images/about-title.png' | relative_url }}"
       alt="Project"
       class="homepage-banner">
     </a>
 
   </div>
+  <section class="intro-section">
+
+    <div class="paper-shadow"></div>
+
+    <div class="paper-card">
+
+        <h2>Dear Visitor,</h2>
+
+        <p>
+            Hi! I'm Amanda, a recent UCLA Computer Engineering graduate
+            who enjoys designing software and hardware that solve
+            real-world problems.
+
+            My interests range from embedded systems and machine learning
+            to full-stack development and UI design.
+
+            Whether I'm programming an ESP32, building a React website,
+            or experimenting with AI, I love turning ideas into something
+            people can interact with.
+        </p>
+
+        <p class="signature">
+            — Amanda
+        </p>
+
+    </div>
+
+</section>
+    <img
+      src="{{ '/images/timeline-banner.png' | relative_url }}"
+      alt="Project"
+      class="navigation-image">
+    </a>
+<section class="timeline">
+
+
+<div class="timeline-item">
+
+    <div class="dot"></div>
+
+    <div class="timeline-card">
+        <h3>Fall 2022</h3>
+        <h4>Started UCLA</h4>
+        <p>Began studying Computer Engineering.</p>
+    </div>
+
+</div>
+
+
+<div class="timeline-item">
+
+    <div class="dot"></div>
+
+    <div class="timeline-card">
+        <h3>Summer 2025</h3>
+        <h4>WizeCamel Internship</h4>
+        <p>
+            Worked on AI-powered web interfaces and tested API workflows.
+        </p>
+    </div>
+
+</div>
+
+<div class="timeline-item">
+
+    <div class="dot"></div>
+
+    <div class="timeline-card">
+        <h3>Spring 2026</h3>
+        <h4>Graduated</h4>
+        <p>
+            Earned my B.S. in Computer Engineering from UCLA and began
+            pursuing software and embedded engineering roles.
+        </p>
+    </div>
+
+</div>
+
+<div class="timeline-item">
+
+    <div class="dot"></div>
+
+    <div class="timeline-card">
+        <h3>Fall 2026</h3>
+        <h4>Started Cal Poly Pomona</h4>
+        <p>
+            Began Electrcial Engineering Master's Program.
+        </p>
+    </div>
+
+</div>
+
+</section>
+   <img
+      src="{{ '/images/skills-banner.png' | relative_url }}"
+      alt="Project"
+      class="navigation-image">
+    </a>
+<section class="skills-section">
+    <div class="cards">
+
+        <div class="info-card">
+
+            <h3>Skills</h3>
+
+            <ul>
+                <li>Python</li>
+                <li>C/C++</li>
+                <li>JavaScript</li>
+                <li>React</li>
+                <li>Node.js</li>
+                <li>HTML & CSS</li>
+                <li>Verilog</li>
+                <li>ESP32 / STM32</li>
+                <li>TensorFlow</li>
+                <li>LT SPICE</li>
+            </ul>
+
+        </div>
+
+        <div class="info-card">
+
+            <h3>Interests</h3>
+
+            <ul>
+                <li>Embedded Systems</li>
+                <li>Machine Learning</li>
+                <li>Computer Vision</li>
+                <li>UI / UX Design</li>
+                <li>Full-Stack Development</li>
+                <li>PCB Design</li>
+                <li>Artificial Intelligence</li>
+                <li>Arts and Crafts</li>
+                <li>Music Composition</li>
+                <li>Creative Coding</li>
+            </ul>
+
+        </div>
+
+    </div>
+
+</section>
 
 </main>
+{% include animated.html %}
+{% include home-button.html %}
+{% include footer.html %}
 </body>
 </html>
